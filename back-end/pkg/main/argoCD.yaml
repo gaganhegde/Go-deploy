@@ -1,0 +1,34 @@
+typemeta:
+  kind: Application
+  apiversion: argoproj.io/v1alpha1
+objectmeta:
+  name: ""
+  generatename: ""
+  namespace: argocd
+  selflink: ""
+  uid: ""
+  resourceversion: ""
+  generation: 0
+  creationtimestamp: "0001-01-01T00:00:00Z"
+  deletiontimestamp: null
+  deletiongraceperiodseconds: null
+  labels: {}
+  annotations: {}
+  ownerreferences: []
+  finalizers: []
+  clustername: ""
+  managedfields: []
+spec:
+  source:
+    repourl: https://
+    path: manifest/
+    targetrevision: HEAD
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: ""
+  project: default
+  syncpolicy:
+    automated:
+      prune: true
+      selfheal: true
+    syncoptions: []

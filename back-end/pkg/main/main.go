@@ -6,10 +6,10 @@ import (
 	"net/http"
 	"sync"
 
-	argocd "github.com/redhat-developer/kam/pkg/argoCD"
-	deployments "github.com/redhat-developer/kam/pkg/deployment"
-	namespaces "github.com/redhat-developer/kam/pkg/namespace"
-	"github.com/redhat-developer/kam/pkg/services"
+	argocd "github.com/gaganhegde/go-deploy/pkg/argoCD"
+	deployments "github.com/gaganhegde/go-deploy/pkg/deployment"
+	namespaces "github.com/gaganhegde/go-deploy/pkg/namespace"
+	"github.com/gaganhegde/go-deploy/pkg/services"
 )
 
 //Service1 struct contains the json structure of service yaml file
